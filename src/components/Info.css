@@ -1,0 +1,296 @@
+.info-one{
+    background-color: aliceblue;
+    display: grid;
+    width: 100%;
+    height: 800px;
+    border: 1px solid black;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 300px);
+    padding-left:15%;
+    padding-top: 10%;
+    animation: slid 2s ease-out;
+}
+
+.animateme{
+    animation: slid .7s ease-in;
+}
+@keyframes slid{
+    0% {transform: skew(30deg) translateX(-500px);}
+
+    100% {transform: skew(0deg) translateX(0px);}
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid linear-gradient(to right, #265285, #CE0695);
+    background-image: linear-gradient(to right, #265285, #CE0695);
+    /* background-clip: padding-box; */
+    
+    /* background-origin: border-box; */
+  }
+  .circle span{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+   background-color: rgb(255, 255, 255);
+   position: absolute;
+   margin: auto;
+   /* margin-top: 20px; */
+   justify-content: center;
+   align-items: center;
+   margin-left: 13px;
+   margin-top:13px ;
+  }
+  .circle span p{
+    font-size: 40px;
+    color:#265285 ;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8px;
+    
+  }
+  circle p{
+    color: black;
+  }
+  .text{
+    margin-top: 25px;
+  }
+  .text h5{
+    font-size: 12px;
+    margin-top: 8px;
+    color: rgb(65, 64, 64);
+    font-weight: 100;
+    width: 70%;
+  }
+  .text h3{
+    color: #265285;
+  }
+  .loca{
+    width: 21%;
+    height: 2px;
+    border: 1px solid #265285;
+    background-color: #265285;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 100px;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+  .loca-two{
+    width: 20.5%;
+    height: 2px;
+    border: 1px solid #CE0695;
+    background-color: #CE0695;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 36.2%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+  .loca-three{
+    width: 18%;
+    height: 2px;
+    border: 1px solid #265285;
+    background-color: #265285;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 64.5%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+
+  .loca-four{
+    width: 2px;
+    height: 53%;
+    border: 1px solid #CE0695;
+    background-color: #CE0695;
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 82.5%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+
+  .loca-five{
+    width: 18%;
+    height: 2px;
+    border: 1px solid #265285;
+    background-color: #265285;
+    position: absolute;
+    margin-top: 27.7%;
+    margin-left: 64.5%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+  .loca-six{
+    width: 20.5%;
+    height: 2px;
+    border: 1px solid #CE0695;
+    background-color: #CE0695;
+    position: absolute;
+    margin-top: 27.7%;
+    margin-left: 36.2%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }.loca-seven{
+    width: 20.5%;
+    height: 2px;
+    border: 1px solid #265285;
+    background-color: #265285;
+    position: absolute;
+    margin-top: 27.7%;
+    margin-left: 8%;
+    /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+
+  }
+
+
+
+  @media screen and (max-width:480px) {
+    .info-one{
+        background-color: aliceblue;
+        display: grid;
+        width: 100%;
+        height: 800px;
+        border: 1px solid black;
+        grid-template-columns: repeat(3 , 1fr);
+        grid-template-rows: repeat(3 , 250px);
+        padding-left:10%;
+        padding-top: 10%;
+        
+    }
+    
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid linear-gradient(to right, #265285, #CE0695);
+        background-image: linear-gradient(to right, #265285, #CE0695);
+        /* background-clip: padding-box; */
+         
+        /* background-origin: border-box; */
+      }
+      .circle span{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+       background-color: rgb(255, 255, 255);
+       position: absolute;
+       margin: auto;
+       /* margin-top: 20px; */
+       justify-content: center;
+       align-items: center;
+       margin-left: 8px;
+       margin-top:8px ;
+      }
+      .circle span p{
+        font-size: 18px;
+        color:#265285 ;
+        font-weight: 700;
+        text-align: center;
+        justify-content: center;
+        margin-top: 6px;
+        
+      }
+      circle p{
+        color: black;
+      }
+      .text{
+        margin-top: 15px;
+      }
+      .text h5{
+        font-size: 7px;
+        margin-top: 8px;
+        color:black;
+        font-weight: 100;
+        width: 70%;
+      }
+      .text h3{
+        color: #265285;
+        font-size: 9px;
+        width: 80%;
+      }
+      .loca{
+        width: 17%;
+        height: 2px;
+        border: 1px solid #265285;
+        background-color: #265285;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 50px;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+      .loca-two{
+        width: 17%;
+        height: 2px;
+        border: 1px solid #CE0695;
+        background-color: #CE0695;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 43%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+      .loca-three{
+        width: 12%;
+        height: 2px;
+        border: 1px solid #265285;
+        background-color: #265285;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 73.5%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+    
+      .loca-four{
+        width: 2px;
+        height: 32.8%;
+        border: 1px solid #CE0695;
+        background-color: #CE0695;
+        position: absolute;
+        margin-top: 28px;
+        margin-left: 85%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+    
+      .loca-five{
+        width: 11%;
+        height: 2px;
+        border: 1px solid #265285;
+        background-color: #265285;
+        position: absolute;
+        margin-top: 76%;
+        margin-left: 73.5%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+      .loca-six{
+        width: 18%;
+        height: 2px;
+        border: 1px solid #CE0695;
+        background-color: #CE0695;
+        position: absolute;
+        margin-top: 76%;
+        margin-left: 42%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }.loca-seven{
+        width: 16%;
+        height: 2px;
+        border: 1px solid #265285;
+        background-color: #265285;
+        position: absolute;
+        margin-top: 76%;
+        margin-left: 14%;
+        /* border: 3px solid linear-gradient(to right, #265285, #CE0695); */
+    
+      }
+  }
+

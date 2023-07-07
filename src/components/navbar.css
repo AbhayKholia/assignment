@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-color: black; */
+
+}
+
+a {
+  text-decoration: none;
+  padding-left: 10px;
+  transition: all 0.3 ease;
+}
+
+.navbar a:hover{
+    color: #fff;
+    background-color: #ffb300;
+    border-radius: 4px;
+    /* padding: 8px; */
+    /* transform: scale(1.1); */
+}
+li {
+  list-style-type: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+  background-color: black;
+
+  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+}
+
+.logo {
+height: 30px;
+width: 30px;
+border: 1px solid black;
+border-radius: 50px;
+margin-left: 100px;
+text-align: center;
+background-color: white;
+color: black;
+margin-top: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+ul{
+    text-align: center;
+    margin-left: -10%;
+    position: absolute;
+    margin-top: 20px;
+
+}
+.nav-links li {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  /* margin: auto; */
+  justify-content: center;
+}
+.hero {
+  text-align: center;
+  margin-top: 15%;
+}
+.hero h1 {
+  text-align: center;
+  font-size: 80px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+  color: aliceblue;
+}
+.btns{
+color: rgb(0, 0, 0);
+height: 35px;
+width: 130px;
+border-radius: 10px;
+/* right:30px; */
+position: absolute;
+left:1100px ;
+border: 1px solid #ffc400;
+background-color:#ffc400 ;
+text-align: center;
+margin-top: 20px;
+}
+.btns button{
+    color: black;
+    font-weight: 500;
+    margin-top: 2px;
+}
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    left: -50px;
+    align-items: center;
+    text-align: center;
+    padding-left:10px ;
+  }
+  .nav-links {
+    display: none;
+  }
+  .btns{
+    display: none;
+  }
+  .nav-links-mobile {
+    position: fixed;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+   
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  ul li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+     color: black;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+}
